@@ -1,0 +1,689 @@
+# CHIZY 船舶管加工车间生产线配置文件
+
+# 工序定义
+process_definitions:
+  # ========== Z1产线（中一产线）==========
+  Z1QD:
+    duration: 1.48
+    duration_variance: 0.05
+    setup_time: 0.18
+    cooling_time: 0.18
+  
+  Z1ZGQD:
+    duration: 1.48
+    duration_variance: 0.05
+    setup_time: 0.18
+    cooling_time: 0.18
+  
+  Z1JJG:
+    duration: 1.28
+    duration_variance: 0.05
+    setup_time: 0.16
+    cooling_time: 0.16
+  
+  Z1DGH:
+    duration: 5
+    duration_variance: 0.05
+    setup_time: 0.5
+    cooling_time: 0.5
+  
+  Z1ZGH:
+    duration: 3
+    duration_variance: 0.05
+    setup_time: 0.5
+    cooling_time: 0.5
+  
+  Z1XZH:
+    duration: 8
+    duration_variance: 0.05
+    setup_time: 0.5
+    cooling_time: 0.5
+  
+  Z1DZH:
+    duration: 8
+    duration_variance: 0.05
+    setup_time: 0.4
+    cooling_time: 0.4
+  
+  Z1XZZP:
+    duration: 5
+    duration_variance: 0.05
+    setup_time: 0.5
+    cooling_time: 0.5
+  
+  Z143/48ZP:
+    duration: 8.0
+    duration_variance: 0.05
+    setup_time: 1.0
+    cooling_time: 1.0
+  
+  Z145/46ZP:
+    duration: 8.0
+    duration_variance: 0.05
+    setup_time: 1.0
+    cooling_time: 1.0
+  
+  Z1WG:
+    duration: 4
+    duration_variance: 0.05
+    setup_time: 1
+    cooling_time: 1
+  
+  Z1YCWC:
+    duration: 0
+    duration_variance: 0.05
+    setup_time: 0
+    cooling_time: 0
+  
+  # ========== Z2产线（中二产线）==========
+  Z2QD:
+    duration: 2.56
+    duration_variance: 0.05
+    setup_time: 0.32
+    cooling_time: 0.32
+  
+  Z2ZGQD:
+    duration: 2.56
+    duration_variance: 0.05
+    setup_time: 0.32
+    cooling_time: 0.32
+  
+  Z2JJG:
+    duration: 1.28
+    duration_variance: 0.05
+    setup_time: 0.16
+    cooling_time: 0.16
+  
+  Z2DGH:
+    duration: 9
+    duration_variance: 0.05
+    setup_time: 0.3
+    cooling_time: 0.3
+  
+  Z2ZGH:
+    duration: 10
+    duration_variance: 0.05
+    setup_time: 1
+    cooling_time: 1
+  
+  Z2XZH:
+    duration: 11.7
+    duration_variance: 0.05
+    setup_time: 1
+    cooling_time: 1
+  
+  Z2DZH:
+    duration: 38.4
+    duration_variance: 0.05
+    setup_time: 4.8
+    cooling_time: 4.8
+  
+  Z2XZZP:
+    duration: 6.3
+    duration_variance: 0.05
+    setup_time: 0.3
+    cooling_time: 0.2
+  
+  Z243/48ZP:
+    duration: 24.0
+    duration_variance: 0.05
+    setup_time: 3.0
+    cooling_time: 3.0
+  
+  Z245/46ZP:
+    duration: 24.0
+    duration_variance: 0.05
+    setup_time: 3.0
+    cooling_time: 3.0
+  
+  Z2WG:
+    duration: 19.2
+    duration_variance: 0.05
+    setup_time: 2.4
+    cooling_time: 2.4
+  
+  Z2YCWC:
+    duration: 0
+    duration_variance: 0.05
+    setup_time: 0
+    cooling_time: 0
+  
+  # ========== X2产线（小径产线）==========
+  X2QD:
+    duration: 0.64
+    duration_variance: 0.05
+    setup_time: 0.08
+    cooling_time: 0.08
+  
+  X2ZGQD:
+    duration: 0.64
+    duration_variance: 0.05
+    setup_time: 0.08
+    cooling_time: 0.08
+  
+  X2JJG:
+    duration: 1.28
+    duration_variance: 0.05
+    setup_time: 0.16
+    cooling_time: 0.16
+  
+  X2DGH:
+    duration: 3.3
+    duration_variance: 0.05
+    setup_time: 0.2
+    cooling_time: 0.2
+  
+  X2ZGH:
+    duration: 1.7
+    duration_variance: 0.05
+    setup_time: 0.2
+    cooling_time: 0.2
+  
+  X2DZH:
+    duration: 12.8
+    duration_variance: 0.05
+    setup_time: 1.6
+    cooling_time: 1.6
+  
+  X2XZZP:
+    duration: 4
+    duration_variance: 0.05
+    setup_time: 0.5
+    cooling_time: 0.5
+  
+  X243/48ZP:
+    duration: 13.71
+    duration_variance: 0.05
+    setup_time: 1.71
+    cooling_time: 1.71
+  
+  X245/46ZP:
+    duration: 13.71
+    duration_variance: 0.05
+    setup_time: 1.71
+    cooling_time: 1.71
+  
+  X2WG:
+    duration: 3.84
+    duration_variance: 0.05
+    setup_time: 0.48
+    cooling_time: 0.48
+  
+  X2YCWC:
+    duration: 0
+    duration_variance: 0.05
+    setup_time: 0
+    cooling_time: 0
+  
+  # ========== DJ产线（大径产线）==========
+  DJQD:
+    duration: 4.27
+    duration_variance: 0.05
+    setup_time: 0.53
+    cooling_time: 0.53
+  
+  DJZGQD:
+    duration: 4.27
+    duration_variance: 0.05
+    setup_time: 0.53
+    cooling_time: 0.53
+  
+  DJJJG:
+    duration: 1.28
+    duration_variance: 0.05
+    setup_time: 0.16
+    cooling_time: 0.16
+  
+  DJDGH:
+    duration: 12.0
+    duration_variance: 0.05
+    setup_time: 2.5
+    cooling_time: 2.5
+  
+  DJZGH:
+    duration: 12
+    duration_variance: 0.05
+    setup_time: 1
+    cooling_time: 1
+  
+  DJXZHJ:
+    duration: 14
+    duration_variance: 0.05
+    setup_time: 1
+    cooling_time: 1
+  
+  DJDZH:
+    duration: 40
+    duration_variance: 0.05
+    setup_time: 4
+    cooling_time: 4
+  
+  DJXZZP:
+    duration: 12
+    duration_variance: 0.05
+    setup_time: 1
+    cooling_time: 1
+  
+  DJ35/36ZP:
+    duration: 35
+    duration_variance: 0.05
+    setup_time: 5
+    cooling_time: 5
+  
+  DJWG:
+    duration: 4
+    duration_variance: 0.05
+    setup_time: 0.45
+    cooling_time: 0.45
+  
+  DJYCWC:
+    duration: 0
+    duration_variance: 0.05
+    setup_time: 0
+    cooling_time: 0
+  
+  # ========== FTX产线（非铁线）==========
+  FTXQD:
+    duration: 3
+    duration_variance: 0.05
+    setup_time: 0.2
+    cooling_time: 0.2
+  
+  FTXZGQD:
+    duration: 3
+    duration_variance: 0.05
+    setup_time: 0.2
+    cooling_time: 0.2
+  
+  FTXJJG:
+    duration: 1.28
+    duration_variance: 0.05
+    setup_time: 0.16
+    cooling_time: 0.16
+  
+  FTXDGH:
+    duration: 6.6
+    duration_variance: 0.05
+    setup_time: 1.5
+    cooling_time: 1.5
+  
+  FTXZGH:
+    duration: 3
+    duration_variance: 0.05
+    setup_time: 1
+    cooling_time: 0.8
+  
+  FTXDZH:
+    duration: 14.4
+    duration_variance: 0.05
+    setup_time: 3.15
+    cooling_time: 3.15
+  
+  FTXZZP:
+    duration: 3.3
+    duration_variance: 0.05
+    setup_time: 0.9
+    cooling_time: 0.0
+  
+  FTXDGZP:
+    duration: 3.3
+    duration_variance: 0.05
+    setup_time: 0.9
+    cooling_time: 0.0
+  
+  FTXZGZP:
+    duration: 3.3
+    duration_variance: 0.05
+    setup_time: 0.9
+    cooling_time: 0.0
+  
+  FTX15/16ZP:
+    duration: 6.3
+    duration_variance: 0.05
+    setup_time: 0.9
+    cooling_time: 0.0
+  
+  FTX13/18ZP:
+    duration: 6.3
+    duration_variance: 0.05
+    setup_time: 0.9
+    cooling_time: 0.0
+  
+  FTXWG:
+    duration: 9.9
+    duration_variance: 0.05
+    setup_time: 1.8
+    cooling_time: 0.9
+  
+  FTXYCWC:
+    duration: 0
+    duration_variance: 0.05
+    setup_time: 0
+    cooling_time: 0
+
+# 设备配置
+equipment:
+  # ========== 大径产线 ==========
+  DJ:
+    name: "大径产线"
+    description: "用于大直径管道的生产"
+    device_groups:
+      DJQD:
+        count: 2
+        capacity: 1
+        station_name: "大径：切断"
+      DJJJG:
+        count: 1
+        capacity: 1
+        station_name: "大径：机加工"
+      DJDGH:
+        count: 1
+        capacity: 1
+        station_name: "大径：短管焊"
+      DJZGH:
+        count: 1
+        capacity: 1
+        station_name: "大径：直管焊接"
+      DJXZHJ:
+        count: 2
+        capacity: 1
+        station_name: "大径：小组焊接"
+      DJDZH:
+        count: 10
+        capacity: 1
+        station_name: "大径：大组焊"
+      DJXZZP:
+        count: 2
+        capacity: 1
+        station_name: "大径：小组装配"
+      DJ35/36ZP:
+        count: 6
+        capacity: 1
+        station_name: "大径：35/36装配"
+      DJWG:
+        count: 1
+        capacity: 1
+        station_name: "大径：弯管"
+      DJYCWC:
+        count: 1
+        capacity: 1
+        station_name: "大径：一次完成"
+
+  # ========== 中一产线 ==========
+  Z1:
+    name: "中一产线"
+    description: "用于中等直径管道的生产（第一组）"
+    device_groups:
+      Z1QD:
+        count: 1
+        capacity: 1
+        station_name: "中一：切断"
+      Z1ZGQD:
+        count: 1
+        capacity: 1
+        station_name: "中一：支管切断"
+      Z1JJG:
+        count: 1
+        capacity: 1
+        station_name: "中一：机加工"
+      Z1DGH:
+        count: 1
+        capacity: 1
+        station_name: "中一：短管焊"
+      Z1ZGH:
+        count: 1
+        capacity: 1
+        station_name: "中一：直管焊"
+      Z1XZH:
+        count: 1
+        capacity: 1
+        station_name: "中一：小组焊"
+      Z1DZH:
+        count: 1
+        capacity: 1
+        station_name: "中一：大组焊"
+      Z1XZZP:
+        count: 1
+        capacity: 1
+        station_name: "中一：小组装配"
+      Z143/48ZP:
+        count: 1
+        capacity: 1
+        station_name: "中一：43/48装配"
+      Z145/46ZP:
+        count: 1
+        capacity: 1
+        station_name: "中一：45/46装配"
+      Z1WG:
+        count: 1
+        capacity: 1
+        station_name: "中一：弯管"
+      Z1YCWC:
+        count: 1
+        capacity: 1
+        station_name: "中一：一次完成"
+
+  # ========== 中二产线 ==========
+  Z2:
+    name: "中二产线"
+    description: "用于中等直径管道的生产（第二组）"
+    device_groups:
+      Z2QD:
+        count: 2
+        capacity: 1
+        station_name: "中二：切断"
+      Z2JJG:
+        count: 1
+        capacity: 1
+        station_name: "中二：机加工"
+      Z2DGH:
+        count: 1
+        capacity: 1
+        station_name: "中二：短管焊"
+      Z2ZGH:
+        count: 1
+        capacity: 1
+        station_name: "中二：直管焊"
+      Z2XZH:
+        count: 2
+        capacity: 1
+        station_name: "中二：小组焊"
+      Z2DZH:
+        count: 8
+        capacity: 1
+        station_name: "中二：大组焊"
+      Z2XZZP:
+        count: 2
+        capacity: 1
+        station_name: "中二：小组装配"
+      Z243/48ZP:
+        count: 1
+        capacity: 1
+        station_name: "中二：43/48装配"
+      Z245/46ZP:
+        count: 3
+        capacity: 1
+        station_name: "中二：45/46装配"
+      Z2WG:
+        count: 1
+        capacity: 1
+        station_name: "中二：弯管"
+      Z2YCWC:
+        count: 1
+        capacity: 1
+        station_name: "中二：一次完成"
+
+  # ========== 小径产线 ==========
+  X2:
+    name: "小径产线"
+    description: "用于小直径管道的生产"
+    device_groups:
+      X2QD:
+        count: 2
+        capacity: 1
+        station_name: "小径：切断"
+      X2ZGQD:
+        count: 1
+        capacity: 1
+        station_name: "小径：支管切断"
+      X2JJG:
+        count: 1
+        capacity: 1
+        station_name: "小径：机加工"
+      X2DGH:
+        count: 2
+        capacity: 1
+        station_name: "小径：短管焊"
+      X2ZGH:
+        count: 2
+        capacity: 1
+        station_name: "小径：直管焊"
+      X2DZH:
+        count: 9
+        capacity: 1
+        station_name: "小径：大组焊"
+      X2XZZP:
+        count: 1
+        capacity: 1
+        station_name: "小径：小组装配"
+      X243/48ZP:
+        count: 5
+        capacity: 1
+        station_name: "小径：43/48装配"
+      X245/46ZP:
+        count: 6
+        capacity: 1
+        station_name: "小径：45/46装配"
+      X2WG:
+        count: 3
+        capacity: 1
+        station_name: "小径：弯管"
+      X2YCWC:
+        count: 1
+        capacity: 1
+        station_name: "小径：一次完成"
+  
+  # ========== 非铁产线 ==========
+  FTX:
+    name: "非铁线产线"
+    description: "用于非铁材料管道的生产"
+    device_groups:
+      FTXQD:
+        count: 2
+        capacity: 1
+        station_name: "非铁线：切断"
+      FTXZGQD:
+        count: 1
+        capacity: 1
+        station_name: "非铁线：支管切断"
+      FTXJJG:
+        count: 1
+        capacity: 1
+        station_name: "非铁线：机加工"
+      FTXDGH:
+        count: 1
+        capacity: 1
+        station_name: "非铁线：短管焊"
+      FTXZGH:
+        count: 1
+        capacity: 1
+        station_name: "非铁线：直管焊"
+      FTXDZH:
+        count: 4
+        capacity: 1
+        station_name: "非铁线：大组焊"
+      FTXZZP:
+        count: 1
+        capacity: 1
+        station_name: "非铁线：小组装配"
+      FTXDGZP:
+        count: 1
+        capacity: 1
+        station_name: "非铁线：短管装配"
+      FTXZGZP:
+        count: 2
+        capacity: 1
+        station_name: "非铁线：直管装配"
+      FTX15/16ZP:
+        count: 2
+        capacity: 1
+        station_name: "非铁线：15/16装配"
+      FTX13/18ZP:
+        count: 2
+        capacity: 1
+        station_name: "非铁线：13/18装配"
+      FTXWG:
+        count: 1
+        capacity: 1
+        station_name: "非铁线：弯管"
+      FTXYCWC:
+        count: 1
+        capacity: 1
+        station_name: "非铁线：一次完成"
+
+# 工序代码映射
+process_code_mapping:
+  # 中一产线
+  Z1QD: "中一切断"
+  Z1ZGQD: "中一支管切断"
+  Z1JJG: "中一机加"
+  Z1DGH: "中一短管"
+  Z1ZGH: "中一直管"
+  Z1XZH: "中一小组"
+  Z1DZH: "中一大组"
+  Z1XZZP: "中一小组装配"
+  Z143/48ZP: "中一43/48装配"
+  Z145/46ZP: "中一45/46装配"
+  Z1WG: "中一弯管"
+  Z1YCWC: "中一一次完成"
+  # 中二产线
+  Z2QD: "中二切断"
+  Z2ZGQD: "中二支管切断"
+  Z2JJG: "中二机加"
+  Z2DGH: "中二短管"
+  Z2ZGH: "中二直管"
+  Z2XZH: "中二小组"
+  Z2DZH: "中二大组"
+  Z2XZZP: "中二小组装配"
+  Z243/48ZP: "中二43/48装配"
+  Z245/46ZP: "中二45/46装配"
+  Z2WG: "中二弯管"
+  Z2YCWC: "中二一次完成"
+  # 小径产线
+  X2QD: "小径切断"
+  X2ZGQD: "小径支管切断"
+  X2JJG: "小径机加"
+  X2DGH: "小径短管"
+  X2ZGH: "小径直管"
+  X2DZH: "小径大组"
+  X2XZZP: "小径小组装配"
+  X243/48ZP: "小径43/48装配"
+  X245/46ZP: "小径45/46装配"
+  X2WG: "小径弯管"
+  X2YCWC: "小径一次完成"
+  # 大径产线
+  DJQD: "大径切断"
+  DJZGQD: "大径支管切断"
+  DJJJG: "大径机加"
+  DJDGH: "大径短管"
+  DJZGH: "大径直管"
+  DJXZHJ: "大径小组"
+  DJDZH: "大径大组"
+  DJXZZP: "大径小组装配"
+  DJ35/36ZP: "大径35/36装配"
+  DJWG: "大径弯管"
+  DJYCWC: "大径一次完成"
+  # 非铁产线
+  FTXQD: "非铁切断"
+  FTXZGQD: "非铁支管切断"
+  FTXJJG: "非铁机加"
+  FTXDGH: "非铁短管"
+  FTXZGH: "非铁直管"
+  FTXDZH: "非铁大组"
+  FTXZZP: "非铁小组装配"
+  FTXDGZP: "非铁短管装配"
+  FTXZGZP: "非铁直管装配"
+  FTX15/16ZP: "非铁15/16装配"
+  FTX13/18ZP: "非铁13/18装配"
+  FTXWG: "非铁弯管"
+  FTXYCWC: "非铁一次完成"

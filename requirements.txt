@@ -1,0 +1,10 @@
+# 核心依赖
+simpy>=4.0.1
+fastapi>=0.104.1
+uvicorn>=0.24.0
+pydantic>=2.4.2
+pyyaml>=6.0.1
+
+# 可选依赖（用于测试）
+requests>=2.31.0
+streamlit>=1.37.0

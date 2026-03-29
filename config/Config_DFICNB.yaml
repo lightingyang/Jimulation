@@ -1,0 +1,112 @@
+# DFICNB 集装箱生产线配置文件（简化版）
+
+# 工序定义
+process_definitions:
+  前框:
+    duration: 1.13
+    duration_variance: 0.05
+    setup_time: 0.1
+    cooling_time: 0.1
+
+  后框:
+    duration: 1.13
+    duration_variance: 0.05
+    setup_time: 0.1
+    cooling_time: 0.1
+
+  侧板:
+    duration: 0.97
+    duration_variance: 0.05
+    setup_time: 0.1
+    cooling_time: 0.1
+
+  底架:
+    duration: 1.2
+    duration_variance: 0.05
+    setup_time: 0.1
+    cooling_time: 0.1
+
+  顶板:
+    duration: 1.07
+    duration_variance: 0.05
+    setup_time: 0.1
+    cooling_time: 0.1
+
+  总装:
+    duration: 1.02
+    duration_variance: 0.05
+    setup_time: 0.1
+    cooling_time: 0.1
+
+  油漆:
+    duration: 1.13
+    duration_variance: 0.05
+    setup_time: 0.1
+    cooling_time: 0.1
+
+  后置:
+    duration: 1.13
+    duration_variance: 0.05
+    setup_time: 0.1
+    cooling_time: 0.1
+
+# 设备配置
+equipment:
+  简化生产线:
+    name: "简化生产线"
+    description: "包含8个核心设备的简化配置"
+    device_groups:
+      前框:
+        count: 1
+        capacity: 1
+
+        station_name: "前框"
+      后框:
+        count: 1
+        capacity: 1
+
+        station_name: "后框"
+      侧板:
+        count: 1
+        capacity: 1
+
+        station_name: "侧板"
+      底架:
+        count: 1
+        capacity: 1
+
+        station_name: "底架"
+      顶板:
+        count: 1
+        capacity: 1
+
+        station_name: "顶板"
+      总装:
+        count: 1
+        capacity: 1
+
+        station_name: "总装"
+      油漆:
+        count: 1
+        capacity: 1
+
+        station_name: "油漆"
+      后置:
+        count: 1
+        capacity: 1
+
+        station_name: "后置"
+
+# 预处理线配置
+preprocessing:
+  line_speed: 35          # 预处理线速度（m/min）
+  device_oee: 0.771       # 设备OEE（综合设备效率）
+
+  manufacturer_efficiency:
+    default:
+      efficiency_ratio: 0.8
+      description: "未知厂商"
+
+    默认配置:
+      efficiency_ratio: 1.0
+      description: "正常效率，无额外监造影响"

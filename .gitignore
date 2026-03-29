@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+log/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend (独立仓库)
+front_end/
+
+# Claude Code 个人配置
+.claude/
+CLAUDE.md
+
+# Backups / archives
+doc/*.zip
+
+# Test data / business data
+test*.json
+*.response.json
+device_property.csv
